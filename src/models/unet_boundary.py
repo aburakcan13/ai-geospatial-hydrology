@@ -67,7 +67,7 @@ class BoundaryAwareResUNet(nn.Module):
         self.water_head = nn.Conv2d(64, num_classes, kernel_size=1)
         self.boundary_head = nn.Conv2d(64, num_classes, kernel_size=1)
 
-    def forward(self, x: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:
+    def forward(self, x: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
         # Encoding
         e1 = self.enc1(x)
         e2 = self.enc2(self.pool(e1))
