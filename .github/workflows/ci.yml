@@ -40,5 +40,7 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
       - name: Run Unit Tests with Pytest
+        env:
+          PYTHONPATH: .
         run: |
-          pytest tests/ --doctest-modules --junitxml=junit/test-results.xml --cov=src --cov-report=term-missing
+          pytest tests/ -v
