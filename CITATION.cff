@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software or reference the methodology, please cite the book as below."
+authors:
+  - family-names: "Can"
+    given-names: "Burak"
+    orcid: "https://orcid.org/0009-0004-0570-7133"
+    affiliation: "Department of Computer Technologies, Tarsus University, Mersin, Turkey"
+title: "AI-Driven Geospatial Hydrology: Machine Learning and Decision Support for Surface Water Dynamics"
+series: "Studies in Big Data"
+publisher: "Springer Nature"
+year: 2026
+url: "https://github.com/burakcan/ai-geospatial-hydrology"
