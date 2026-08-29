@@ -6,7 +6,7 @@ AI-Driven Geospatial Hydrology (Springer Nature)
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
+from typing import Tuple, List, Optional
 
 class ResidualBlock(nn.Module):
     def __init__(self, in_channels: int, out_channels: int):
