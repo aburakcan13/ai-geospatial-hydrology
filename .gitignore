@@ -1,0 +1,55 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.env
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDE and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Geospatial Data Files (Avoid pushing large datasets)
+data/sample_inputs/*.tif
+data/sample_inputs/*.nc
+data/sample_inputs/*.geojson
+!data/sample_inputs/.gitkeep
+data/ground_truth/*.tif
+!data/ground_truth/.gitkeep
+
+# Model weights
+*.pt
+*.pth
+*.onnx
