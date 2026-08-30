@@ -1,17 +1,11 @@
 cff-version: 1.2.0
-message: "If you use this software or the monograph methods, please cite it as below."
-title: "AI-Driven Geospatial Hydrology: Machine Learning and Decision Support for Surface Water Dynamics"
+message: "If you use this software, please cite it as below."
 authors:
   - family-names: "Can"
     given-names: "Burak"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
-year: 2026
-publisher:
-  name: "Springer Nature"
+title: "AI-Driven Geospatial Hydrology: Machine Learning and Decision Support for Surface Water Dynamics"
+version: 1.0.0
+date-released: "2026-08-31"
+url: "https://github.com/aburakcan13/ai-geospatial-hydrology"
 repository-code: "https://github.com/aburakcan13/ai-geospatial-hydrology"
-keywords:
-  - remote sensing
-  - deep learning
-  - geospatial hydrology
-  - transformers
-  - model context protocol
+license: "MIT"
