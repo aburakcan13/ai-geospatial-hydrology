@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1350519054.svg)](https://doi.org/10.5281/zenodo.22181527)
+
 # AI-Driven Geospatial Hydrology
 > Accompanying codebase and reproducible workflows for the Springer Nature Monograph:  
 > **"AI-Driven Geospatial Hydrology: Machine Learning and Decision Support for Surface Water Dynamics"** (2026) by *Burak Can*.
