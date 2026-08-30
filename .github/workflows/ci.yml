@@ -24,12 +24,10 @@ jobs:
       - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install pytest pytest-cov flake8 torch torchvision numpy xarray scipy rasterio
-          pip install pytest pytest-cov flake8 torch torchvision numpy xarray scipy
+          pip install pytest pytest-cov flake8 torch torchvision numpy xarray scipy rasterio rioxarray
 
       - name: Lint with Flake8 (Non-blocking)
         run: |
-          # Syntax ve import kontrolleri (bilgi amaçlı çalışır, build'i kırmaz)
           flake8 src/ tests/ --count --exit-zero --max-line-length=127 --statistics
 
       - name: Run Unit Tests with Pytest
