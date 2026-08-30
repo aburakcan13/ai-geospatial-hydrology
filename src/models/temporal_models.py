@@ -53,3 +53,20 @@ class HydroConvLSTM(nn.Module):
             h_t, c_t = self.cell(sequence[t], (h_t, c_t))
 
         return torch.sigmoid(self.head(h_t))
+        
+class HydroLSTMForecaster(nn.Module):
+    def __init__(self, in_features: int = 6, hidden_dim: int = 64, num_layers: int = 2, forecast_steps: int = 12):
+        super().__init__()
+        self.lstm = nn.LSTM(
+            input_size=in_features,
+            hidden_size=hidden_dim,
+            num_layers=num_layers,
+            batch_first=True,
+            dropout=0.2 if num_layers > 1 else 0.0
+        )
+        self.fc = nn.Linear(hidden_dim, forecast_steps)
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        lstm_out, (h_n, _) = self.lstm(x)
+        out = self.fc(h_n[-1])
+        return out
